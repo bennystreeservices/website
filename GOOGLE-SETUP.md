@@ -4,7 +4,7 @@ The website stays on GitHub Pages. Google Sites is a separate website builder an
 
 ## Already in the code
 - Unique page titles, descriptions, HTTPS canonical URLs and social sharing metadata.
-- Indexable static HTML, clear service headings and Bedford Park / Chicagoland copy.
+- Indexable static HTML, clear service headings and Western Spring and surrounding areas copy.
 - Connected business, service, website and page JSON-LD identities on both pages.
 - Accurate phone and service area information, optimized responsive images and meaningful alt text.
 - XML sitemap at https://bennystreeservices.com/sitemap.xml and robots.txt.

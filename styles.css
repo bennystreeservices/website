@@ -286,3 +286,10 @@ footer p{margin:10px 0 30px;font-size:13px;color:#b6c0b6!important}
  html{scroll-behavior:auto}
  *,*:before,*:after{transition:none!important}
 }
+
+/* Secondary family contact stays below Benny's primary actions. */
+.secondary-contact{border-top:1px solid #3d4b39;padding-top:20px;margin-top:24px}
+.secondary-contact p{font-size:13px;margin-bottom:8px}
+.secondary-contact a{display:inline-flex;align-items:center;min-height:44px;margin-right:18px;font-size:14px;text-underline-offset:4px}
+.footer-secondary{display:flex;align-items:center;flex-wrap:wrap;gap:6px 16px;margin-bottom:18px;color:#b6c0b6;font-size:12px}
+.footer-secondary a{display:inline-flex;align-items:center;min-height:44px}

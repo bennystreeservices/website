@@ -13,7 +13,7 @@ The `CNAME` file preserves bennystreeservices.com. No build step or paid service
 
 Add gallery photographs by copying an existing `figure` in `.gallery`, updating its image sources, dimensions, descriptive alt text, and accurate caption. Preserve original files and export optimized WebP sizes. Do not describe an image as finished work unless that is confirmed.
 
-Business details were supplied by the owner: Bedford Park and surrounding Chicagoland; tree removal, trimming and pruning, stump removal; family-operated; licensed and insured; free estimates. No hours, street address, email, emergency availability, or additional services were provided.
+Business details were supplied by the owner: Western Spring and surrounding areas; tree removal, trimming and pruning, stump removal; family-operated; licensed and insured; free estimates. No hours, street address, email, emergency availability, or additional services were provided.
 
 Preview with `python -m http.server 8000`, then visit http://localhost:8000.
 
