@@ -9,7 +9,7 @@ The `CNAME` file preserves bennystreeservices.com. No build step or paid service
 - `styles.css`: shared responsive design.
 - `script.js`: updates the copyright year; contact links work without JavaScript.
 - `assets/originals/`: unmodified supplied artwork and photographs.
-- `assets/`: optimized WebP versions in two sizes.
+- `assets/`: optimized WebP versions in two sizes, plus `share-1200x630.jpg` (link preview image), `apple-touch-icon.png` and `favicon-48.png`, all generated from `assets/originals/logo.png`.
 
 Add gallery photographs by copying an existing `figure` in `.gallery`, updating its image sources, dimensions, descriptive alt text, and accurate caption. Preserve original files and export optimized WebP sizes. Do not describe an image as finished work unless that is confirmed.
 
