@@ -94,3 +94,35 @@ nav a{min-height:44px;display:inline-flex;align-items:center}
 .contact-mark{mix-blend-mode:lighten}
 @media(max-width:700px){.phone,.text-link{min-height:44px;display:inline-flex;align-items:center}}
 @media(max-width:700px){.mobile-contact{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}}
+/* Personal service details and reasons to choose the family business. */
+.service-grid{align-items:start}
+.service-grid article{display:flex;flex-direction:column;height:100%}
+.service-grid article p{max-width:none;flex:1}
+.service-grid article .text-link{margin-top:18px;font-size:13px;min-height:44px;display:inline-flex;align-items:center;gap:12px}
+.about-grid{grid-template-columns:1fr 1.05fr;gap:72px}
+.about-story h2{margin-bottom:26px}
+.about-story .intro{margin-bottom:20px}
+.about-story p{font-size:15px}
+.about-story p:last-of-type{margin-bottom:24px}
+.why-benny{border-left:1px solid #bdccb0;padding-left:38px}
+.why-benny h2{border:0;padding:0;font-size:32px;margin-bottom:10px}
+.reasons>div{border-bottom:1px solid #c2ceb8;padding-block:20px}
+.reasons>div:last-child{border-bottom:0;padding-bottom:0}
+.reasons h3{font-size:18px;margin-bottom:8px;letter-spacing:-.2px}
+.reasons p{font-size:14px!important;margin:0;line-height:1.65}
+.about-next{display:flex;justify-content:space-between;align-items:center;gap:24px;border-top:1px solid #bdccb0;margin-top:42px;padding-top:28px}
+.about-next p{margin:0;font-size:20px;font-weight:700;color:var(--ink)}
+@media(max-width:950px){.about-grid{gap:38px}.why-benny{padding-left:28px}}
+@media(max-width:700px){
+ .service-grid article{display:grid;grid-template-columns:42px 1fr;align-items:start}
+ .service-number{grid-row:1/4}.service-grid article .text-link{grid-column:2;margin-top:8px}
+ .service-grid article p{margin-bottom:0}
+ .about-grid{grid-template-columns:1fr;gap:36px}
+ .about-story h2{margin-bottom:22px}
+ .why-benny{border-left:0;border-top:1px solid #bdccb0;padding:30px 0 0}
+ .why-benny h2{font-size:30px}
+ .reasons>div{padding-block:18px}
+ .about-next{display:block;margin-top:30px;padding-top:24px}
+ .about-next p{font-size:20px;line-height:1.4;margin-bottom:18px}
+ .about-next .button{width:100%;gap:12px;padding-inline:12px}
+}
