@@ -293,3 +293,34 @@ footer p{margin:10px 0 30px;font-size:13px;color:#b6c0b6!important}
 .secondary-contact a{display:inline-flex;align-items:center;min-height:44px;margin-right:18px;font-size:14px;text-underline-offset:4px}
 .footer-secondary{display:flex;align-items:center;flex-wrap:wrap;gap:6px 16px;margin-bottom:18px;color:#b6c0b6;font-size:12px}
 .footer-secondary a{display:inline-flex;align-items:center;min-height:44px}
+
+/* Language controls: always available, with a dismissible Spanish suggestion. */
+[hidden]{display:none!important}
+.header-actions{display:flex;align-items:center;gap:12px;margin-left:auto;flex-shrink:0}
+.language-switch{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:9px 13px;border:1px solid #7d9373;border-radius:var(--radius);color:#e1ecd9;font-size:13px;font-weight:600;text-decoration:none;white-space:nowrap}
+.language-switch:hover{background:#243326;border-color:#c0d5ad}
+.language-switch:focus-visible,button:focus-visible{outline:3px solid #78994e;outline-offset:4px}
+.language-prompt{background:#eef4e9;border-bottom:1px solid #cfddc6}
+.language-prompt-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-block:18px}
+.language-prompt strong{font-size:16px;font-weight:600}
+.language-prompt p{margin:2px 0 0;font-size:14px;color:#4f5f4a}
+.language-prompt-actions{display:flex;align-items:center;gap:14px;flex-shrink:0}
+.language-prompt .button{min-height:44px;padding:10px 16px}
+.language-dismiss{min-height:44px;padding:10px 8px;border:0;background:transparent;color:#354c32;font:inherit;font-size:13px;cursor:pointer;text-decoration:underline;text-underline-offset:4px}
+@media(min-width:701px) and (max-width:1050px){.header-inner{gap:16px}.header-actions{gap:8px}.header-call{font-size:12px;padding-inline:10px}.language-switch{font-size:12px;padding-inline:10px}.header-inner nav{gap:16px}}
+@media(max-width:700px){
+ .header-actions{gap:8px}
+ .header-actions .header-call{margin-left:0}
+ .language-switch{font-size:12px;padding-inline:11px}
+ .header-inner>nav{flex-basis:100%}
+ .language-prompt-inner{display:block;padding-block:16px}
+ .language-prompt-actions{margin-top:12px;gap:14px}
+ .language-prompt .button{font-size:13px;padding-inline:14px}
+ html[lang="es"] .hero h1{font-size:clamp(31px,8.1vw,43px)}
+ html[lang="es"] .trust-strip>.wrap{font-size:10px;gap:8px;padding-inline:9px}
+ html[lang="es"] .trust-strip span{gap:5px}
+ html[lang="es"] .trust-strip span:before{width:8px;height:5px}
+ html[lang="es"] .contact-hero h1{font-size:40px}
+ html[lang="es"] .contact-panel .actions{grid-template-columns:1fr}
+}
+@media(max-width:380px){.header-actions .header-call{display:none}html[lang="es"] .trust-strip span:before{display:none}}

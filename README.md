@@ -24,3 +24,14 @@ The mobile contact bar reserves its height, including device safe areas. Both pa
 See `GOOGLE-SETUP.md` for the remaining Google Business Profile and Search Console steps. Real profile URLs and verification tokens must come from the owner’s Google account. No Google account has been created or connected by this code change.
 
 Responsive checks covered both pages at 320, 360, 390, 430, 700, 768, 1024 and 1440 CSS pixels. At each width the document fit the viewport, the phone/SMS targets matched, the footer did not leave a gap, and the mobile contact bar appeared only at its intended breakpoint.
+
+## English and Spanish
+
+- English: `index.html`, `contact.html`.
+- Spanish: `es/index.html`, `es/contact.html`, with their own canonical URLs and reciprocal language metadata.
+- Edit English copy normally, then update the matching entries in `translations/es.json` and run `python scripts/build_spanish.py`. The generator fails if visible copy is missing a Spanish translation, so both versions stay in sync. Brand names and phone numbers stay the same.
+- A header link switches languages and works without JavaScript. The script remembers an explicit choice when browser storage is available. An English page offers a dismissible Spanish suggestion when Spanish is the browser's first preferred language. It never reads keyboard settings and never auto-translates based solely on browser language.
+- Dismissal lasts for the current browser tab session. The language switch remains available after dismissal. No translation widget, external translation service, or added tracking is used.
+- Run `node --test tests/language.test.cjs` and `python tests/check_site.py` after changes. Commit generated Spanish pages so GitHub Pages needs no build step.
+
+Bilingual browser checks covered all four pages at 320, 360, 390, 430, 700, 768, 1024 and 1440 CSS pixels, with no horizontal overflow. Language switching, Spanish navigation and saved preference redirects were also verified in the browser.

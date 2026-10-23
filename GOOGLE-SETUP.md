@@ -28,3 +28,7 @@ Official guidance:
 - https://support.google.com/business/answer/9157481
 - https://developers.google.com/search/docs/appearance/structured-data/local-business
 - https://developers.google.com/search/docs/monitor-debug/search-console-start
+
+## Spanish search pages
+
+Spanish versions live at `/es/` and `/es/contact.html`. Both language versions include reciprocal `hreflang` annotations, self-referencing canonical URLs, localized page metadata and page-language structured data. Both Spanish URLs are in the sitemap. These pages translate the website; they do not assert that staff speak a particular language. The business name, service area and primary/secondary phone numbers remain consistent.
