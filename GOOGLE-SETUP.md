@@ -32,3 +32,15 @@ Official guidance:
 ## Spanish search pages
 
 Spanish versions live at `/es/` and `/es/contact.html`. Both language versions include reciprocal `hreflang` annotations, self-referencing canonical URLs, localized page metadata and page-language structured data. Both Spanish URLs are in the sitemap. These pages translate the website; they do not assert that staff speak a particular language. The business name, service area and primary/secondary phone numbers remain consistent.
+
+## Google reviews integration status (October 28, 2026)
+
+Public searches did not establish a listing matching the supplied primary phone number, (708) 296-8946. Similar business names in other locations are not sufficient verification. No third-party listing was connected.
+
+The homepage review block is designed for the space immediately after About / Why choose Benny’s and before the FAQ. It offers two distinct actions: read Google reviews and leave a Google review. Contact has a compact version. Activation is controlled by `config/google-reviews.json`, initially unverified with no URLs. `scripts/build_reviews.py` leaves the public page unchanged until both exact links have been verified. After activation, rebuild Spanish pages with `python scripts/build_spanish.py`.
+
+Get the actual review-form URL from the owner’s Google Business Profile: Read Reviews, then Get more reviews, then Copy. Also supply the public Google Maps profile link, so visitors can view the listing and its reviews. Verify the listing identity against the phone number and owner-provided details before switching the configuration on.
+
+Official instructions: https://support.google.com/business/answer/16816815?hl=en
+
+The existing branded QR still opens https://bennystreeservices.com/. It is now on the Contact page with download links. It does not open a Google review form and should not be labeled as a review QR. A separate review QR can be generated only after obtaining the correct review-form URL.

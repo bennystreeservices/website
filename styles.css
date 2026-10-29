@@ -324,3 +324,41 @@ footer p{margin:10px 0 30px;font-size:13px;color:#b6c0b6!important}
  html[lang="es"] .contact-panel .actions{grid-template-columns:1fr}
 }
 @media(max-width:380px){.header-actions .header-call{display:none}html[lang="es"] .trust-strip span:before{display:none}}
+
+/* Real Google profile links, once verified, sit between About and FAQs. */
+.reviews-section{padding-block:58px;border-bottom:1px solid var(--line)}
+.reviews-layout{display:grid;grid-template-columns:1fr 1.05fr;gap:72px;align-items:center}
+.reviews-heading h2{margin-bottom:0}
+.reviews-copy{padding-left:38px;border-left:1px solid var(--line-soft)}
+.reviews-label{margin:0 0 12px;color:var(--green)!important;font-size:14px;font-weight:600}
+.reviews-copy>p:not(.reviews-label){font-size:15px;max-width:490px;line-height:1.8}
+.review-actions{display:flex;align-items:center;flex-wrap:wrap;gap:16px}
+.review-actions .text-link{display:inline-flex;align-items:center;min-height:44px}
+.review-preview-button{cursor:default}
+.review-preview-note{margin-bottom:24px;padding:12px 16px;border-left:3px solid var(--sage);background:var(--light);color:var(--ink)!important;font-size:13px}
+.contact-reviews{padding-block:32px;border-top:1px solid var(--line)}
+.contact-reviews h2{font-size:28px;margin-bottom:12px}
+.contact-reviews>p{font-size:15px}
+/* The website QR is a quiet, downloadable tool below the main contact details. */
+.qr-section{display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:56px;align-items:center;padding:38px 42px;margin-bottom:32px;background:var(--light);border:1px solid var(--line);border-radius:8px}
+.qr-copy h2{font-size:32px;margin-bottom:16px}
+.qr-copy>p{max-width:580px;font-size:15px;line-height:1.8}
+.qr-copy .qr-note{font-size:13px;margin-bottom:14px}
+.qr-downloads{display:flex;align-items:center;flex-wrap:wrap;gap:8px 24px}
+.qr-downloads a{display:inline-flex;align-items:center;min-height:44px}
+.qr-figure{margin:0;text-align:center}
+.qr-figure img{width:220px;height:auto;background:white;border-radius:4px}
+.qr-figure figcaption{margin-top:8px;color:var(--muted);font-size:11px}
+@media(max-width:950px){.reviews-layout{gap:38px}.reviews-copy{padding-left:28px}.qr-section{padding:30px;gap:30px}}
+@media(max-width:700px){
+ .reviews-section{padding-block:42px}
+ .reviews-layout{grid-template-columns:1fr;gap:24px}
+ .reviews-copy{padding:0;border-left:0}
+ .review-actions{align-items:stretch;gap:10px 18px}
+ .review-actions .button{padding-inline:17px}
+ .contact-reviews{padding-block:26px}
+ .qr-section{grid-template-columns:1fr;padding:26px 22px;gap:22px;margin-bottom:26px}
+ .qr-copy h2{font-size:29px}
+ .qr-figure{justify-self:center;max-width:100%}
+ .qr-figure img{width:200px}
+}

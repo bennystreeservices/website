@@ -35,3 +35,22 @@ Responsive checks covered both pages at 320, 360, 390, 430, 700, 768, 1024 and 1
 - Run `node --test tests/language.test.cjs` and `python tests/check_site.py` after changes. Commit generated Spanish pages so GitHub Pages needs no build step.
 
 Bilingual browser checks covered all four pages at 320, 360, 390, 430, 700, 768, 1024 and 1440 CSS pixels, with no horizontal overflow. Language switching, Spanish navigation and saved preference redirects were also verified in the browser.
+
+## Reviews and QR placement
+
+The branded website QR is live on the Contact page at `#qr-code`, with PNG and SVG downloads. Every footer links to that section. Its copy explains that it opens the same website, so mobile visitors do not need to scan their own screen. Both English and Spanish versions are generated and validated.
+
+The Google review layout is reserved between About / Why choose Benny’s and the homepage FAQ, with a smaller pair of links on Contact. No review buttons, scores, counts or quotations are published until the exact Google links are verified.
+
+Configure `config/google-reviews.json` with the verified public profile URL and the Google-issued review-form URL, then set `verified` to `true`. Run:
+
+```text
+python scripts/build_reviews.py
+python scripts/build_spanish.py
+python tests/check_site.py
+python tests/test_reviews.py
+```
+
+The first command inserts real links into the reserved HTML positions and adds the profile to the business schema. The Spanish builder localizes the same component. No external widget, API key or paid service is required. Customers view the current reviews on Google and can open the Google review form directly.
+
+To preview the proposed placement before configuring a listing, run `python scripts/build_reviews.py --preview _reviews-preview.html` and open that page on the local server. It is explicitly labeled as a design preview. Do not commit or deploy the preview file.
