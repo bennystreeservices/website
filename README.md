@@ -40,7 +40,7 @@ Bilingual browser checks covered all four pages at 320, 360, 390, 430, 700, 768,
 
 The branded website QR is live on the Contact page at `#qr-code`, with PNG and SVG downloads. Every footer links to that section. Its copy explains that it opens the same website, so mobile visitors do not need to scan their own screen. Both English and Spanish versions are generated and validated.
 
-The Google review layout is reserved between About / Why choose Benny’s and the homepage FAQ, with a smaller pair of links on Contact. No review buttons, scores, counts or quotations are published until the exact Google links are verified.
+The Google review layout is reserved between About / Why choose Benny’s and the homepage FAQ, with a smaller pair of links on Contact. The Google listing and review form were verified on October 28, 2026 against the owner-supplied link, business website and primary phone number. The review links are active in English and Spanish. Scores, counts and quotations are not hardcoded.
 
 Configure `config/google-reviews.json` with the verified public profile URL and the Google-issued review-form URL, then set `verified` to `true`. Run:
 

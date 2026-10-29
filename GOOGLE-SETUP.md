@@ -35,12 +35,14 @@ Spanish versions live at `/es/` and `/es/contact.html`. Both language versions i
 
 ## Google reviews integration status (October 28, 2026)
 
-Public searches did not establish a listing matching the supplied primary phone number, (708) 296-8946. Similar business names in other locations are not sufficient verification. No third-party listing was connected.
+The owner supplied https://share.google/8aVjOCzNjn05yPVir. Its Google listing was verified against the website bennystreeservices.com and primary phone (708) 296-8946. The public Maps listing and direct review form are configured in config/google-reviews.json, with verified set to true.
 
-The homepage review block is designed for the space immediately after About / Why choose Benny’s and before the FAQ. It offers two distinct actions: read Google reviews and leave a Google review. Contact has a compact version. Activation is controlled by `config/google-reviews.json`, initially unverified with no URLs. `scripts/build_reviews.py` leaves the public page unchanged until both exact links have been verified. After activation, rebuild Spanish pages with `python scripts/build_spanish.py`.
+Google Place ID: ChIJSx2n8VoAGgsR-CN8KbHP69Y
 
-Get the actual review-form URL from the owner’s Google Business Profile: Read Reviews, then Get more reviews, then Copy. Also supply the public Google Maps profile link, so visitors can view the listing and its reviews. Verify the listing identity against the phone number and owner-provided details before switching the configuration on.
+The direct review URL https://search.google.com/local/writereview?placeid=ChIJSx2n8VoAGgsR-CN8KbHP69Y was opened and confirmed to display the Benny’s Tree Service review form. No review was submitted or modified during verification.
 
-Official instructions: https://support.google.com/business/answer/16816815?hl=en
+The homepage review section appears after About / Why choose Benny’s and before the FAQ. A compact review section also appears on Contact. Both English and Spanish pages provide separate links to view the listing’s reviews and leave a review on Google. Ratings and counts are not hardcoded, so the site does not present stale scores.
 
-The existing branded QR still opens https://bennystreeservices.com/. It is now on the Contact page with download links. It does not open a Google review form and should not be labeled as a review QR. A separate review QR can be generated only after obtaining the correct review-form URL.
+To update the links, edit config/google-reviews.json, then run python scripts/build_reviews.py and python scripts/build_spanish.py. The builder adds the verified profile to business schema as sameAs.
+
+The branded QR on Contact continues to open https://bennystreeservices.com/. It is a website QR and is not labeled as a review QR.

@@ -17,7 +17,7 @@ import re
 ROOT = Path(__file__).resolve().parents[1]
 START = '<!-- GOOGLE_REVIEWS_START -->'
 END = '<!-- GOOGLE_REVIEWS_END -->'
-ALLOWED_HOSTS = {'google.com', 'www.google.com', 'maps.google.com', 'maps.app.goo.gl', 'g.page', 'g.co'}
+ALLOWED_HOSTS = {'google.com', 'www.google.com', 'search.google.com', 'maps.google.com', 'maps.app.goo.gl', 'g.page', 'g.co'}
 
 
 def verified_links(config):
